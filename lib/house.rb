@@ -42,9 +42,9 @@ class House
   private
 
   def validate_input
-    raise ArgumentError 'Length should be an Integer' unless length.is_a? Integer
-    raise ArgumentError 'Width should be an Integer' unless width.is_a? Integer
-    raise ArgumentError 'Floors should be an Integer' unless floors.is_a? Integer
-    raise ArgumentError 'Square meter Price should be a Float' unless price_m2.is_a? Float
+    raise ArgumentError, 'Length should be an Integer' unless length.is_a? Integer
+    raise ArgumentError, 'Width should be an Integer' unless width.is_a? Integer
+    raise ArgumentError, 'Floors should be an Integer' unless floors.is_a? Integer
+    raise ArgumentError, 'Square meter Price should be a Float' unless price_m2.is_a? Float
   end
 end
